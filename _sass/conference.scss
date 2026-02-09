@@ -7,6 +7,9 @@ $alert-color-level: 9 !default;
 $badge-font-size: 0.85em !default;
 $enable-responsive-font-sizes: true !default;
 
+//   Custom Fonts
+$font-family-monospace: 'Pirata One', cursive !default;
+
 //   FontAwesome
 $fa-font-path: "/assets/webfonts" !default;
 
@@ -24,6 +27,13 @@ $fa-font-path: "/assets/webfonts" !default;
 @import "leaflet/leaflet-locatecontrol";
 
 // Adapt Bootstrap Elements
+
+//   Custom Font Classes
+.pirata-one-regular {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
 //   Alert
 .alert {

@@ -1,8 +1,8 @@
 title: Pre-CHI 2026
 preposition: ""
 description: >-
-  South West UK Pre-CHI 2026 provides an opportunity for researchers from the South West England and De Cymru Human-Computer Interaction Community (SWEDC-HCI) to come together to practice running their accepted CHI papers and work-in-progress research talks
-baseurl: "" # the subpath of your site, e.g. /blog
+  South West UK Pre-CHI 2026 provides an opportunity for researchers from the South West England and De Cymru Human-Computer Interaction Crew (SWEDC-HCI) to come together to practice running their accepted CHI papers and work-in-progress research talks
+baseurl: "/1726" # the subpath of your site, e.g. /blog
 url: "https://South-West-UK-Pre-CHI.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 favicon: "/assets/images/favicon.ico"
 
@@ -67,28 +67,20 @@ conference:
       url: "https://gw4.ac.uk/community/south-west-england-and-de-cymru-human-computer-interaction-community-swedc-hci/"
     breakpoint: md
     links:
-      - name: Programme
+      - name: The Ship’s Itinerary
         relative_url: /programme/
-      - name: Talks
+      - name: Tales o’ the Sea
         relative_url: /talks/
-      - name: Speakers
+      - name: The Crew
         relative_url: /speakers/
-      - name: Location
+      - name: Chart yer Course
         relative_url: /location/
-      - name: Funders
+      - name: Treasure Backers
         relative_url: /funders/
-      - name: Organisers
+      - name: Quartermasters
         relative_url: /organisers/
-      - name: Opportunities
+      - name: Plunder Opportunities
         relative_url: /opportunities/
-      - name: Previous Editions
-        menu:
-          - name: 2026 (current)
-            disabled: true
-          - name: 2025
-            absolute_url: https://south-west-uk-pre-chi.github.io/2025
-          - name: 2024
-            absolute_url: https://sites.google.com/view/southwestprechi/2024/paper-presentation-abstracts
 
   # Link Preview for Sharing
   link_preview:
@@ -103,26 +95,26 @@ conference:
     logo:
       img: "logo.png" # inside /assets/images/
     links:
-      - name: Register
+      - name: Sign the ship’s log
         absolute_url: https://forms.office.com/e/V2WPyYbBQM
-      - name: Programme
+      - name: Order o’ the day
         relative_url: /programme/
-      - name: How to get there
+      - name: Chart yer course
         relative_url: /location/
-      - name: Voting
+      - name: Cast yer lot
         disabled: true
-      - name: Pirate the talks
-        absolute_url: https://south-west-uk-pre-chi.github.io/1726/
+      - name: Return to Land
+        absolute_url: https://south-west-uk-pre-chi.github.io/
 
 
   # Information boxes
   info_bars:
-    - title: Pre-CHI Planning has started for 2026!
-      subtitle: We will hold the event on 27th March 2026.
+    - title: Ahoy, mateys! Pre-CHI Preparations be underway for 2026! 🏴‍☠️
+      subtitle: We’ll be settin’ sail on the 27th o’ March, 2026
       color: secondary
       main_only: true
-    - title: Programme and Speakers will be updated as planning progresses.
-      subtitle: Check back for more details.
+    - title: The ship’s itinerary and the crew o’ speakers will be charted as we make progress.
+      subtitle: Keep yer spyglass handy and check back fer updates!
       color: primary
       pages_only: true
 
