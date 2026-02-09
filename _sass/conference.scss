@@ -29,16 +29,32 @@ $fa-font-path: "/assets/webfonts" !default;
 
 // Adapt Bootstrap Elements
 
-//   Parchment Background
+// Pirate Wooden Deck Background
 body {
-  background-color: #f4e8d0;
-  background-image: 
-    linear-gradient(rgba(244, 232, 208, 0.8) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(244, 232, 208, 0.8) 1px, transparent 1px);
-  background-size: 20px 20px;
+  background-color: #8b5a2b; // base wood brown
+  background-image:
+          repeating-linear-gradient(
+                          0deg,                  // horizontal planks
+                          #8b5a2b,
+                          #8b5a2b 50px,          // plank height
+                          #7a4820 51px,          // small line between planks
+                          #7a4820 52px
+          ),
+          repeating-linear-gradient(
+                          90deg,                 // wood grain texture
+                          rgba(0,0,0,0.05),
+                          rgba(0,0,0,0.05) 2px,
+                          transparent 3px,
+                          transparent 6px
+          );
+  background-size: 100% 52px, auto;
+  background-attachment: fixed;
+  background-repeat: repeat;
   position: relative;
+  color: #fff; // default text color over wood
 }
 
+// Optional subtle shadow overlay for depth
 body::before {
   content: "";
   position: fixed;
@@ -46,14 +62,11 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: 
-    radial-gradient(ellipse at center, rgba(139, 69, 19, 0.1) 0%, transparent 70%),
-    linear-gradient(45deg, rgba(139, 69, 19, 0.05) 25%, transparent 25%),
-    linear-gradient(-45deg, rgba(139, 69, 19, 0.05) 25%, transparent 25%);
-  background-size: 100% 100%, 10px 10px, 10px 10px;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.08), transparent 70%);
   pointer-events: none;
   z-index: -1;
 }
+
 
 //   Custom Font Classes
 .pirata-one-regular {
