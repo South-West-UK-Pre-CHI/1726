@@ -61,11 +61,6 @@ conference:
 
   # Navigation bar
   navigation:
-    logo:
-      name: SWEDC-HCI
-      # img: ''
-      url: "https://gw4.ac.uk/community/south-west-england-and-de-cymru-human-computer-interaction-community-swedc-hci/"
-    breakpoint: md
     links:
       - name: The Ship’s Itinerary
         relative_url: /programme/
