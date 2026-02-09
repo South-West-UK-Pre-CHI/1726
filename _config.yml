@@ -81,6 +81,8 @@ conference:
         relative_url: /organisers/
       - name: Plunder Opportunities
         relative_url: /opportunities/
+      - name: Return to Land
+        absolute_url: https://south-west-uk-pre-chi.github.io/
 
   # Link Preview for Sharing
   link_preview:
