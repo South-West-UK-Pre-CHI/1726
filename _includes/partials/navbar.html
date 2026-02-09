@@ -1,20 +1,26 @@
 <nav class="navbar navbar-expand-{{ site.conference.navigation.breakpoint | default: 'md' }} navbar-light bg-light mb-3">
-  <div class="container">
+  <div class="container d-flex align-items-center justify-content-between flex-nowrap">
 
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
+    <!-- Left: Main logo -->
+    <a class="navbar-brand me-3" href="{{ site.baseurl }}/">
       <img src="/assets/images/logo_small.png" alt="Site Logo" style="max-width: 100px; height: auto;" />
     </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Navbar toggler (mobile) -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+    <!-- Center + Right: nav links and optional secondary logo -->
+    <div class="collapse navbar-collapse d-flex justify-content-between align-items-center flex-nowrap" id="navbarSupportedContent">
+
+      <!-- Nav links (horizontal) -->
+      <ul class="navbar-nav d-flex flex-row align-items-center mb-0">
         {%- for link in site.conference.navigation.links -%}
 
         {%- if link.menu %}
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown me-2">
           <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown{{ forloop.index0 }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ link.name }}
           </a>
@@ -26,7 +32,7 @@
             {{ link_tag }}
             {{ link.name }}
             </a>
-            {%- endfor %}
+            {%- endfor -%}
           </div>
         </li>
 
@@ -34,35 +40,24 @@
         {%- include partials/get_live_timestamps.html -%}
 
         {%- if link.name_inactive -%}
-        <li class="nav-item live-hide" data-start="{{ live_starts }}" data-end="{{ live_ends }}">
+        <li class="nav-item live-hide me-2" data-start="{{ live_starts }}" data-end="{{ live_ends }}">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
             {{ link.name_inactive }}
           </a>
         </li>
         {%- endif -%}
 
-        <li class="nav-item live-show d-none" data-start="{{ live_starts }}" data-end="{{ live_ends }}">
+        <li class="nav-item live-show d-none me-2" data-start="{{ live_starts }}" data-end="{{ live_ends }}">
           {%- if site.conference.live.streaming.enable %}
-          <a class="nav-link" title="
-                  {%- if link.name -%}
-                    {{- link.name -}}
-                  {%- else -%}
-                    {{- site.data.lang[site.conference.lang].live.stream | default: "Live Stream" -}}
-          {%- endif -%}
-          " {% if site.conference.live.streaming.external -%}
-          href="{{ site.conference.live.streaming.external }}"
-          {%- else -%}
-          data-toggle="modal" data-target="#stream-modal" data-room="{{ r.name }}" href="#"
-          {%- endif -%}
-          >
+          <a class="nav-link" title="{%- if link.name -%}{{- link.name -}}{%- else -%}{{- site.data.lang[site.conference.lang].live.stream | default: "Live Stream" -}}{%- endif -%}"
+          {% if site.conference.live.streaming.external -%} href="{{ site.conference.live.streaming.external }}"
+          {% else -%} data-toggle="modal" data-target="#stream-modal" data-room="{{ r.name }}" href="#"{% endif %}>
           {%- else %}
           {%- assign link_styleclass = "nav-link" -%}
-          {%- include partials/get_link.html %}
+          {%- include partials/get_link.html -%}
           {{ link_tag }}
           {%- endif %}
-
           {{ link.name | default: "" }}
-
           <span class="live-button badge badge-dark font-weight-normal text-left">
                   <object data="{{ site.baseurl }}/assets/icons/live.svg" type="image/svg+xml">!</object>
                   {{ site.data.lang[site.conference.lang].live.live | default: "Live" }}
@@ -71,7 +66,7 @@
         </li>
 
         {%- else %}
-        <li class="nav-item {% if page.url contains link.relative_url %}active{% endif %}">
+        <li class="nav-item {% if page.url contains link.relative_url %}active{% endif %} me-2">
           {%- assign link_styleclass = "nav-link" -%}
           {%- include partials/get_link.html -%}
           {{ link_tag }}
@@ -79,21 +74,22 @@
           </a>
         </li>
         {%- endif -%}
-        {%- endfor %}
+        {%- endfor -%}
       </ul>
-    </div>
 
-    {%- if site.conference.navigation.logo %}
-    <div class="navbar-brand navbar-logo mr-0 ml-1 text-right overflow-hidden">
-      <a href="{{ site.conference.navigation.logo.url }}">
-        {%- if site.conference.navigation.logo.img %}
-        <img src="{{ site.conference.navigation.logo.img | prepend: '/assets/images/' | prepend: site.baseurl }}" class="align-middle" alt="{{ site.conference.navigation.logo.name }}" />
-        {%- else %}
-        {{ site.conference.navigation.logo.name }}
-        {%- endif %}
-      </a>
-    </div>
-    {%- endif %}
+      <!-- Right-side logo -->
+      {%- if site.conference.navigation.logo %}
+      <div class="d-flex align-items-center ms-3 navbar-logo">
+        <a href="{{ site.conference.navigation.logo.url }}">
+          {%- if site.conference.navigation.logo.img %}
+          <img src="{{ site.conference.navigation.logo.img | prepend: '/assets/images/' | prepend: site.baseurl }}" class="align-middle" alt="{{ site.conference.navigation.logo.name }}" />
+          {%- else %}
+          {{ site.conference.navigation.logo.name }}
+          {%- endif %}
+        </a>
+      </div>
+      {%- endif %}
 
+    </div>
   </div>
 </nav>
