@@ -1,14 +1,18 @@
 .jumbotron {
-  padding: $jumbotron-padding ($jumbotron-padding / 2);
-  margin-bottom: $jumbotron-padding;
-  color: $jumbotron-color;
-  background-color: $jumbotron-bg;
-  @include border-radius($border-radius-lg);
+  background-image: url("../assets/images/parchment.jpeg"); // adjust path
+  background-size: cover;          /* or "repeat" if seamless */
+  background-position: center;
+  background-repeat: no-repeat;
 
-  @include media-breakpoint-up(sm) {
-    padding: ($jumbotron-padding * 2) $jumbotron-padding;
-  }
+  color: #3b2f1c;
+  padding: 4rem 3rem;
+
+  border-radius: 12px;
+  box-shadow:
+          inset 0 0 40px rgba(0,0,0,0.15),
+          0 10px 30px rgba(0,0,0,0.25);
 }
+
 
 .jumbotron-fluid {
   padding-right: 0;
