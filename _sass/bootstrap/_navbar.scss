@@ -144,11 +144,17 @@ $pirate-paper-dark: #e2cf9e;
 // Navbar collapse
 // ---------------------------------------------------------------------------
 .navbar-collapse {
-  display: flex;
   flex-basis: auto;
   flex-grow: 1;
   align-items: center;
   flex-wrap: wrap;
+}
+
+// Desktop flex for horizontal layout
+@media (min-width: 768px) { // match your navbar-expand-md
+  .navbar-expand-md .navbar-collapse {
+    display: flex !important; // flex only on desktop
+  }
 }
 
 // ---------------------------------------------------------------------------
