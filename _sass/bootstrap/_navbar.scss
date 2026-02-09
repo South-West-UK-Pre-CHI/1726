@@ -1,19 +1,26 @@
 // ============================================================================
-// Pirate Navbar
-// Pure-CSS parchment + ink styling for Bootstrap navbar
+// Pirate Navbar - Bootstrap Override
+// Pure-CSS parchment + ink styling
 // ============================================================================
-
-// Pirate palette
 $pirate-ink: #412E1E;
 $pirate-ink-dark: #000;
 $pirate-border: #5a4328;
 $pirate-paper-light: #f2e6c9;
 $pirate-paper-dark: #e2cf9e;
 
+// ---------------------------------------------------------------------------
+// Navbar container flex
+// ---------------------------------------------------------------------------
+.navbar .container {
+  display: flex;
+  flex-wrap: nowrap;          // single row on desktop
+  align-items: center;
+  justify-content: space-between;
+}
 
+// ---------------------------------------------------------------------------
 // Navbar
-// ----------------------------------------------------------------------------
-
+// ---------------------------------------------------------------------------
 .navbar {
   position: relative;
   display: flex;
@@ -37,30 +44,18 @@ $pirate-paper-dark: #e2cf9e;
 
   color: $pirate-ink;
 
-  // Keep Bootstrap container behaviour
-  %container-flex-properties {
+  .container,
+  .container-fluid {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
   }
-
-  .container,
-  .container-fluid {
-    @extend %container-flex-properties;
-  }
-
-  @each $breakpoint, $container-max-width in $container-max-widths {
-    > .container#{breakpoint-infix($breakpoint, $container-max-widths)} {
-      @extend %container-flex-properties;
-    }
-  }
 }
 
-
+// ---------------------------------------------------------------------------
 // Navbar brand
-// ----------------------------------------------------------------------------
-
+// ---------------------------------------------------------------------------
 .navbar-brand {
   display: inline-block;
   margin-right: 1rem;
@@ -77,13 +72,12 @@ $pirate-paper-dark: #e2cf9e;
   }
 }
 
-
+// ---------------------------------------------------------------------------
 // Navbar nav
-// ----------------------------------------------------------------------------
-
+// ---------------------------------------------------------------------------
 .navbar-nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  // mobile default
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -92,7 +86,6 @@ $pirate-paper-dark: #e2cf9e;
     font-family: UglyQuaRegular, Georgia, serif;
     font-size: 1.1rem;
     color: $pirate-ink;
-
     padding: 0.3rem 0.5rem;
     margin: 0 0.4rem;
 
@@ -113,7 +106,6 @@ $pirate-paper-dark: #e2cf9e;
       width: 76%;
       height: 2px;
       background-color: currentColor;
-
       opacity: 0;
       transform: scaleX(0.4);
       transition: all 0.2s ease;
@@ -130,42 +122,38 @@ $pirate-paper-dark: #e2cf9e;
   .dropdown-menu {
     position: static;
     float: none;
-
     background: linear-gradient($pirate-paper-light, $pirate-paper-dark);
     border: 2px solid $pirate-border;
-
     box-shadow:
             inset 0 0 15px rgba(0,0,0,0.15),
             0 8px 25px rgba(0,0,0,0.35);
   }
 }
 
-
+// ---------------------------------------------------------------------------
 // Navbar text
-// ----------------------------------------------------------------------------
-
+// ---------------------------------------------------------------------------
 .navbar-text {
   display: inline-block;
   padding: 0.3rem 0.5rem;
-
   font-family: UglyQuaItalic, UglyQuaRegular, Georgia, serif;
   color: $pirate-ink;
 }
 
-
+// ---------------------------------------------------------------------------
 // Navbar collapse
-// ----------------------------------------------------------------------------
-
+// ---------------------------------------------------------------------------
 .navbar-collapse {
-  flex-basis: 100%;
+  display: flex;
+  flex-basis: auto;
   flex-grow: 1;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-
+// ---------------------------------------------------------------------------
 // Navbar toggler (mobile)
-// ----------------------------------------------------------------------------
-
+// ---------------------------------------------------------------------------
 .navbar-toggler {
   padding: 0.4rem 0.6rem;
   background-color: transparent;
@@ -195,62 +183,22 @@ $pirate-paper-dark: #e2cf9e;
   }
 }
 
-
+// ---------------------------------------------------------------------------
 // Responsive navbar expansion
-// ----------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+.navbar-expand-md .navbar-nav {
+  flex-direction: row; // horizontal on desktop
+}
 
-.navbar-expand {
-  @each $breakpoint in map-keys($grid-breakpoints) {
-    $next: breakpoint-next($breakpoint, $grid-breakpoints);
-    $infix: breakpoint-infix($next, $grid-breakpoints);
-
-    &#{$infix} {
-      @include media-breakpoint-down($breakpoint) {
-        %container-navbar-expand-#{$breakpoint} {
-          padding-right: 0;
-          padding-left: 0;
-        }
-
-        > .container,
-        > .container-fluid {
-          @extend %container-navbar-expand-#{$breakpoint};
-        }
-      }
-
-      @include media-breakpoint-up($next) {
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-
-        .navbar-nav {
-          flex-direction: row;
-
-          .dropdown-menu {
-            position: absolute;
-          }
-
-          .nav-link {
-            padding-right: 0.75rem;
-            padding-left: 0.75rem;
-          }
-        }
-
-        .navbar-collapse {
-          display: flex !important;
-          flex-basis: auto;
-        }
-
-        .navbar-toggler {
-          display: none;
-        }
-      }
-    }
+@media (max-width: 767.98px) {
+  .navbar-nav {
+    flex-direction: column; // stacked on mobile
   }
 }
 
-
-// Navbar themes (neutralised — pirate overrides all)
-// ----------------------------------------------------------------------------
-
+// ---------------------------------------------------------------------------
+// Navbar themes (neutralized — pirate overrides all)
+// ---------------------------------------------------------------------------
 .navbar-light,
 .navbar-dark {
   .navbar-brand,
