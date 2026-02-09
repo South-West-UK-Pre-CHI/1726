@@ -61,6 +61,7 @@ conference:
 
   # Navigation bar
   navigation:
+    breakpoint: md
     links:
       - name: The Ship’s Itinerary
         relative_url: /programme/
