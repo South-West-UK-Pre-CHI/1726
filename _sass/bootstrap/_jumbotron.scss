@@ -1,19 +1,15 @@
 .jumbotron {
-  position: relative; // ensures z-index works
-  z-index: 1;
-  background-image: url("../assets/images/parchment.jpeg"); // your parchment
+  background-color: #f4e8d0; /* parchment base */
+  background-image: url("/assets/images/parchment.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  color: #3b2f1c;
+  position: relative;
+  color: #3b2f1c; /* dark ink color */
   padding: 4rem 3rem;
   border-radius: 12px;
-  box-shadow:
-          inset 0 0 40px rgba(0,0,0,0.15),
-          0 10px 30px rgba(0,0,0,0.25);
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.15), 0 10px 30px rgba(0,0,0,0.25);
 }
-
 
 
 .jumbotron-fluid {
