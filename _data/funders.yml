@@ -13,3 +13,8 @@
   website: https://biglab.co.uk/
   affiliation: A research group within University of Bristol
   thank_you_message: "Our thanks to the Bristol Interaction Group for keepin’ the crew well-fed with a most generous feast."
+
+- name: Cardiff University
+  logo: /assets/images/funders/CU.jpg
+  website: https://www.cardiff.ac.uk/
+  thank_you_message: "Thanks to the Cardiff University for helpin’ our crew reach these scholarly shores."
