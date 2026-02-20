@@ -11,7 +11,7 @@
   instagram: https://www.instagram.com/prosquared.plus/
 
 - role: Pro² Be Hiring!
-  image: /assets/images/opportunities/pro2.png
+  image: /assets/images/opportunities/pro2-hiring.png
   summary: We be huntin’ fer a seasoned Development Specialist who be mad fer open source! If ye fit the bill, hoist yer application by the 11th o’ March 2026.
   responsibilities:
     - Command the front-end deck, settin’ the course fer architecture, performance, accessibility, and developer ease.
@@ -22,12 +22,12 @@
   website: https://www.bristol.ac.uk/jobs/find/details/?nPostingId=200995&nPostingTargetId=385637&id=Q50FK026203F3VBQBV7V77V83&LG=UK&languageSelect=UK&mask=newuobext
 
 - role: Pro² Treasure Be Available
-  image: /assets/images/opportunities/pro2.png
+  image: /assets/images/opportunities/pro2-funding.png
   summary: The pro² Residency Scheme be open on a rolling basis to support international and industrial residencies that help folks craft digital devices in small numbers. These residencies aim to forge long-lashin’ partnerships ‘tween academia and industry.
   website: https://prosquared.org/the-pro2-residency-scheme/
 
 - role: Pro² CHI Workshop
-  image: /assets/images/opportunities/pro2.png
+  image: /assets/images/opportunities/pro2-chi.png
   summary: The pro² crew be sailin’ to this year’s CHI and hostin’ a workshop called ‘Are We Doin’ Enough? Sharin’ Design and Manufacturin’ Expertise Across Open Source Hardware Communities’. The application window be closed, but we’d love to meet ye if ye be attendin’.
   website: https://are-we-doing-enough-workshop.github.io/
   website-text: CHI Workshop
