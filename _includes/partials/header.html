@@ -16,8 +16,6 @@
 
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css?t={{ site.time | date: "%s" }}" />
   <link rel="icon" type="image/x-icon" href="{{ site.favicon | relative_url }}">
-  <link rel="preload" as="font" href="{{ site.baseurl }}/assets/webfonts/fa-regular-400.woff2" type="font/woff2" crossorigin="anonymous" />
-  <link rel="preload" as="font" href="{{ site.baseurl }}/assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
   {%- if site.conference.live %}
   <link rel="prefetch" as="image" href="{{ site.baseurl }}/assets/icons/live.svg" type="image/svg+xml" crossorigin="anonymous" />
   <link rel="prefetch" as="fetch" href="{{ site.baseurl }}/assets/js/data.json" type="application/json" crossorigin="anonymous" />
@@ -39,6 +37,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&family=Trade+Winds&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/8d1e782153.js" crossorigin="anonymous"></script>
 
 </head>
 
