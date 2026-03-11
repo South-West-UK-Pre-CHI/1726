@@ -10,16 +10,6 @@
   bluesky: https://bsky.app/profile/prosquared.org
   instagram: https://www.instagram.com/prosquared.plus/
 
-- role: Postdoctoral research opportunities at the University of Bristol
-  image: /assets/images/opportunities/inclusiveXplay.png
-  summary: Two sharp-minded scholars be sought to sail aboard the ERC project inclusiveXplay. This grand voyage studies how cross-sensory interaction can aid the early development o’ blind, visually impaired, and sighted preschool scallywags alike. These two posts form a mighty research pipeline, chartin’ waters across cross-sensory cognition, inclusive co-design, and the forging o’ new cross-sensory technologies to craft inclusive social play contraptions.
-  event-details:
-  - The chosen crew will drop anchor in the Diverse-Ability Interaction Lab (Dive Lab) within the Bristol Interaction Group (BIG) at the University of Bristol, one o’ the UK’s finest fleets sailin’ the seas o’ HCI research. BIG gathers scholars skilled in interaction design, accessible computing, multisensory interaction, AI, fabrication, and strange new interactive materials, makin’ for a lively and interdisciplinary crew. Their exploits often appear in famed ports such as CHI, IDC, UIST, CSCW, DIS, and ASSETS.
-  - Successful buccaneers who win these posts shall join a lively and supportive crew o’ HCI researchers, designers, engineers, and experimental psychologists, and be heartily encouraged to forge high-impact discoveries and chart their own scholarly course.
-  - Cast yer spyglass below for details on the specific roles.
-  website: https://dive.ousmet.com
-  website-text: Diverse-Ability Interaction Lab
-
 - role: Pro² Be Hiring!
   image: /assets/images/opportunities/pro2-hiring.png
   summary: We be huntin’ fer a seasoned Development Specialist who be mad fer open source! If ye fit the bill, hoist yer application by the 11th o’ March 2026.
@@ -30,6 +20,17 @@
     - Use open-source practices and tools (release notes, READMEs, issue trackin’, discussions) to make the project friendly fer new hands and old salts alike.
     - Parley with developer crews via forums, social channels, live streams, and meet-ups, turnin’ feedback into improvements and keepin’ contributors and users engaged.
   website: https://www.bristol.ac.uk/jobs/find/details/?nPostingId=200995&nPostingTargetId=385637&id=Q50FK026203F3VBQBV7V77V83&LG=UK&languageSelect=UK&mask=newuobext
+
+- role: Postdoctoral research opportunities at the University of Bristol
+  image: /assets/images/opportunities/inclusiveXplay.png
+  summary: Two sharp-minded scholars be sought to sail aboard the ERC project inclusiveXplay. This grand voyage studies how cross-sensory interaction can aid the early development o’ blind, visually impaired, and sighted preschool scallywags alike. These two posts form a mighty research pipeline, chartin’ waters across cross-sensory cognition, inclusive co-design, and the forging o’ new cross-sensory technologies to craft inclusive social play contraptions.
+  event-details:
+  - The chosen crew will drop anchor in the Diverse-Ability Interaction Lab (Dive Lab) within the Bristol Interaction Group (BIG) at the University of Bristol, one o’ the UK’s finest fleets sailin’ the seas o’ HCI research. BIG gathers scholars skilled in interaction design, accessible computing, multisensory interaction, AI, fabrication, and strange new interactive materials, makin’ for a lively and interdisciplinary crew. Their exploits often appear in famed ports such as CHI, IDC, UIST, CSCW, DIS, and ASSETS.
+  - Successful buccaneers who win these posts shall join a lively and supportive crew o’ HCI researchers, designers, engineers, and experimental psychologists, and be heartily encouraged to forge high-impact discoveries and chart their own scholarly course.
+  - Cast yer spyglass below for details on the specific roles.
+  website: https://dive.ousmet.com
+  website-text: Diverse-Ability Interaction Lab
+
 
 - role: Inclusive Co-Design fer Cross-Sensory Social Play (24 Months)
   image: /assets/images/opportunities/inclusiveXplay.png
