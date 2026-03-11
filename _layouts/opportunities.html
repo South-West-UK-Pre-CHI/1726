@@ -35,6 +35,22 @@
                         {% endfor %}
                     </ul>
                     {% endif %}
+                    {% if opportunity.fit %}
+                    <h5 class="mt-3">Apply fer this position if ye be:</h5>
+                    <ul>
+                        {% for trait in opportunity.fit %}
+                        <li>{{ trait }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {% if opportunity.benefits %}
+                    <h5 class="mt-3">Fresh crewmates shall reap the spoils o’:</h5>
+                    <ul>
+                        {% for benefit in opportunity.benefits %}
+                        <li>{{ benefit }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
 
                     <!-- Contact Information -->
                     <div class="mt-auto">
