@@ -18,7 +18,7 @@ For more navigational secrets, consult the log: [Travel and Things to Do]({{site
 
 ## Captain’s Map
 
-Signposts be posted inside and outside the ship for every chamber, head, and lift, with doors plainly marked; 
+Signposts be posted inside and outside the ship for every chamber, head, and lift, with doors plainly marked;
 the prayer and quiet quarters shall be marked separately and clear as the crow’s nest.
 
 <details>
