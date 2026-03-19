@@ -1,0 +1,8 @@
+---
+name: Breakfast
+speakers:
+  - South-West UK Pre-CHI
+categories:
+  - Other (Parley, Grog, etc.)
+hide: true
+---

@@ -109,10 +109,6 @@ conference:
     - title: Pre-CHI be takin’ place on the 27th o’ March, 2026! 🏴‍☠️
       color: secondary
       main_only: true
-    - title: The ship’s itinerary and the crew o’ speakers will be charted as we make progress.
-      subtitle: Keep yer spyglass handy and check back fer updates!
-      color: primary
-      pages_only: true
 
   # Live indications
   live:
@@ -132,8 +128,18 @@ conference:
   talks:
     # Talk categories
     main_categories:
-      - name: Talk Category 1
+      - name: Tales of the Senses & Seafarers’ Experiences
         color: secondary
+      - name: Health & Fair Passage
+        color: success
+      - name: Craftin’
+        color: info
+      - name: Illusions o’ the Mind & Thinkin’ Machines
+        color: warning
+      - name: Show & Tell
+        color: primary
+      - name: Other (Parley, Grog, etc.)
+        color: dark
     # Hide icons on talk overview page
     hide_icons: false
 
