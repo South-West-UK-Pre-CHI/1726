@@ -1,6 +1,7 @@
 {% include partials/header.html %}
 {% assign nbr_days = site.data.program.days | size -%}
 
+<div class="card">
   <h1 class="display-5 {% if nbr_days > 1 -%} mb-2 {%- else -%} mb-4 {%- endif %} text-break">
     {%- if page.title -%}
       {{- page.title -}}
@@ -198,5 +199,5 @@
         </div>
       {%- endfor -%}
   {%- endif -%}
-
+</div>
 {% include partials/footer.html %}
