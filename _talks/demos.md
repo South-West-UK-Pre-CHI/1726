@@ -10,7 +10,7 @@ speakers:
   - Alex Gray
   - Jack Jarvis
 categories:
-  - Demos/Posters
+  - Show & Tell
 ---
 
 Flow-Tivated - [Nathalie Alexandra Tcherdakoff]({{ site.baseurl }}/speakers/tcherdakoff)
