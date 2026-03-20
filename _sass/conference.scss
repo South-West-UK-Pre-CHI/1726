@@ -179,7 +179,7 @@ main.container img {
 
 // Program
 
-//   Sticky header and first column
+//   Table styling
 .table {
   // Avoid sticky cells without border
   border-collapse: separate;
@@ -190,17 +190,7 @@ main.container img {
     border-top-width: 0px;
   }
 
-  // Sticky horizontal positioning
-  th {
-    position: sticky;
-    background-color: $body-bg;
-  }
-  th:first-of-type {
-    left: 0px;
-    z-index: 1;
-  }
-
-  // Hide shadow of table cells next to sticky header
+  // Hide shadow of table cells next to header
   thead tr > th:last-of-type {
     box-shadow: 10px 0px 0px 0px rgba(255, 255, 255, 1);
   }
