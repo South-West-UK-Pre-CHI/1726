@@ -93,8 +93,6 @@ conference:
     logo:
       img: "logo.png" # inside /assets/images/
     links:
-      - name: Sign the ship’s log
-        absolute_url: https://forms.office.com/e/V2WPyYbBQM
       - name: Order o’ the day
         relative_url: /programme/
       - name: Chart yer course
