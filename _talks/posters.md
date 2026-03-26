@@ -19,7 +19,7 @@ speakers:
   - Nathalie Alexandra “Alex” Tcherdakoff
   - Ellen Weir
 categories:
-  - Demos/Posters
+  - Show & Tell
 ---
 Co-Design with Neurodiverse Groups of Children Through 'Collective Protagonism' - [Brooke Morris]({{ site.baseurl }}/speakers/morris)
 

@@ -6,7 +6,7 @@ speakers:
   - Paul Goddard
   - Mike Richardson
 categories:
-  - Demos/Posters
+  - Show & Tell
 ---
 
 Flow-Tivated - [Nathalie Alexandra Tcherdakoff]({{ site.baseurl }}/speakers/tcherdakoff)
