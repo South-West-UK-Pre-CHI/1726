@@ -16,11 +16,11 @@
                     </thead>
                     <tbody>
                         {% for award in site.data.awards %}
-                        <tr>
+                        <div class="card"><tr>
                             <td><strong>{{ award.name }}</strong></td>
                             <td>{{ award.winner }}</td>
                             <td>{% if award.talk_url %}<a href="{{ award.talk_url }}" target="_blank">{{ award.talk_title }}</a>{% else %}{{ award.talk_title }}{% endif %}</td>
-                        </tr>
+                        </tr></div>
                         {% endfor %}
                     </tbody>
                 </table>
