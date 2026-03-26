@@ -14,15 +14,17 @@
                             <th scope="col" class="w-50">Title</th>
                         </tr>
                     </thead>
+                    <div class="card">
                     <tbody>
                         {% for award in site.data.awards %}
-                        <div class="card"><tr>
+                       <tr>
                             <td><strong>{{ award.name }}</strong></td>
                             <td>{{ award.winner }}</td>
                             <td>{% if award.talk_url %}<a href="{{ award.talk_url }}" target="_blank">{{ award.talk_title }}</a>{% else %}{{ award.talk_title }}{% endif %}</td>
-                        </tr></div>
+                        </tr>
                         {% endfor %}
                     </tbody>
+                    </div>
                 </table>
             </div>
             
