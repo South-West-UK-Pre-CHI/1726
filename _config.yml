@@ -102,7 +102,7 @@ conference:
       - name: The Captain’s Favour
         relative_url: /awards/
       - name: Return to Land
-        absolute_url: https://south-west-uk-pre-chi.github.io/
+        absolute_url: https://south-west-uk-pre-chi.github.io/2026/
 
   # Information boxes
   info_bars:
